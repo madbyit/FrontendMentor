@@ -5,24 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Advice generator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <section class="main-content">
+    <div class="quote-container">
+      <div class="">
+        <p>ADVICE  #<span id="no"></span></p>
+        <h3><blockquote id="quotes"> </blockquote> </h3>
+      </div>
+      <img id="line-image" src="images/pattern-divider-desktop.svg" alt="">
+      <div class="dice">
+        <a onclick="randomizeQuote()" href="#">
+          <img  src="images/icon-dice.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
 
-  Advice #<!-- Advice ID goes here -->
-
-  "<!-- Advice text goes here -->"
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <section class="footer-item">
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.github.com/madbyit">MadByIT</a>.
+    </div>
+  </footer>
+  </section>
+  <script src="index.js" charset="utf-8"></script>
 </body>
 </html>

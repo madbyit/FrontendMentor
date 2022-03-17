@@ -1,0 +1,84 @@
+body{
+    box-sizing: border-box;
+    background-color: hsl(218, 23%, 16%);
+    text-align: center;
+    margin: auto;
+    padding: 8% 30% 2%;
+}
+
+.quote-container{
+    text-align: center;
+    position: relative;
+    width:50%;
+    background-color:hsl(217, 19%, 24%);
+    margin:8% auto;
+    border-radius: 4%;
+    padding: 5% 4% 5%;
+    margin-bottom: 24%;
+}
+
+#line-image{
+    width: 90%;
+    margin: 7px auto 15px;
+}
+
+.dice{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,50%);
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    height: 47px;
+    width: 47px;
+}
+
+.quote-container blockquote{
+    font-family: 'Manrope', sans-serif;
+    font-weight:800;
+    color:hsl(193, 38%, 86%);
+    line-height: 2rem;
+}
+
+.quote-container p{
+    font-family: 'Manrope', sans-serif;
+    font-weight:400;
+    letter-spacing: 0.3rem;
+    color:hsl(150, 100%, 66%);
+}
+
+.dice img{
+    width: 42%;
+    margin-top: 13px; 
+}
+  
+footer{
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    margin: auto;
+}
+
+.dice:hover{
+    -moz-box-shadow: 0 0 15px hsl(150, 100%, 66%);
+    -webkit-box-shadow: 0 0 15px hsl(150, 100%, 66%);
+    box-shadow: 0 0 15px hsl(150, 100%, 66%);
+}
+  
+  @media screen and (max-width :495px){
+    
+    body{
+      padding: 30% 5%;
+    }
+  
+    footer{
+     position: fixed;
+     bottom: 1px;
+     margin: 4% auto;
+    }
+
+    .quote-container blockquote{
+     font-size: 20px;
+     line-height: 1.8rem;
+    }
+}
